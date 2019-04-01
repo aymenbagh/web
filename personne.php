@@ -1,67 +1,45 @@
 <?php
 
-class Compte{
-    private $pseudo;
-    private $nom;
-    private $mdp;
-    private  $mdp2;
-    private $mail;
-    private $cp;
-    function __construct($pseudo,$nom,$mdp,$mdp2,$mail,$cp){
-        $this->pseudo=$pseudo;
-        $this->nom=$nom;
-        $this->mdp=$mdp;
-        $this->mdp2=$mdp2;
-        $this->mail=$mail;
-        $this->cp=$cp;
-    }
-    
-    function getPseudo(){
-        return $this->pseudo;
-    }
-    function getNom(){
-        return $this->nom;
-    }
-    function getMdp(){
-        return $this->mdp;
-    }
-    function getMdp2 ()
-
+class sav
 {
-    return $this->mdp2;
-}
-        function getCp(){
-        return $this->cp;
-    }
-    function getMail(){
-        return $this->mail;
+	private $Name;
+	private $Mail;
+	private $Object;
+    private $Message; 
+    
+    function __construct($Name,$Mail,$Object,$Message)
+    {
+    	
+    	$this->Name=$Name;
+        $this->Mail=$Mail;
+    	$this->Object=$Object;
+        $this->Message=$Message;
     }
 
-  
-    
+    function getname() {return $this->Name ;}
+    function getmail() {return $this->Mail ;}
+    function getobject() {return $this->Object ;}
+    function getmessage() {return $this->Message;}
+    function setmail($Mail) {$this->Mail=$Mail ;}
 }
-class Carte{
-    private $pseudo;
-    
-    private $mdp;
-    
-    function __construct($pseudo,$mdp){
-        $this->pseudo=$pseudo;
-       
-        $this->mdp=$mdp;
-        
-    }
-    
-    function getPseudo(){
-        return $this->pseudo;
-    }
-    
-    function getMdp(){
-        return $this->mdp;
-    }
-    
 
-  
+class rate
+{
+    private $Mail; 
+    private $name; 
+    private $feedback; 
     
+    function __construct($Mail,$name,$feedback)
+
+    {
+       $this->Mail=$Mail; 
+       $this->name=$name; 
+       $this->feedback=$feedback; 
+    }
+    function getmail() {return $this->Mail ;}
+    function getname () { return  $this->name;}
+    function getfeedback () { return $this->feedback; }
+    function setmail($Mail){$this->Mail=$Mail;}
 }
+
 ?>

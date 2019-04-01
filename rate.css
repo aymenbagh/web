@@ -1,0 +1,170 @@
+body{
+	margin: 0; 
+	padding: 0; 
+	background: #ADD8E6	; 
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; 
+	
+	background-size: cover;
+}
+.rating
+{
+	position: absolute;
+	top: 30%; 
+	left: 50%; 
+	transform: translate(-50%,-50%) rotateY(180deg);
+	display: flex;
+	}
+	.rating input 
+	{
+		display: none; 
+
+	}
+	.rating label
+	{
+		display: block;
+		cursor: pointer;
+		width: 50px; 
+
+	}
+	.rating label:before
+	{
+		content: '\f005'; 
+		font-family: fontAwesome;
+		position: relative;
+		display: block;
+		font-size: 50px;
+		color: #101010;
+
+	}
+	.rating label:after
+	{
+		content: '\f005'; 
+		font-family: fontAwesome;
+		position: absolute;
+		display: block;
+		font-size: 50px;
+		color: #D4AF37;
+		top: 0;
+		opacity: 0;
+		transition: .5s; 
+		text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+
+	}
+	.rating label:hover:after,
+	.rating label:hover ~label:after,
+	.rating input:checked ~ label:after
+	{
+		opacity: 1;
+	}
+
+.form
+{
+	text-align: center;
+	width: 350px; 
+	box-sizing: border-box;
+	padding: 40px; 
+	background: transparent; 
+	opacity: 0.9;
+	bottom: -100px;
+}
+.form .input-group
+{
+	position: center;
+	width: 100%; 
+	margin-bottom: 25px;
+	bottom: -150px; 
+
+}
+
+.form .input-group input
+{
+	height: 50px; 
+	width: 100%;	
+	padding: 0 20px; 
+	box-sizing: border-box;
+	font-size: 18px; 
+	outline: none;
+	border-radius: 1px solid ;
+	border-color:  black;
+	padding-bottom: 0px;
+}
+.form .input-group textarea
+{
+	
+	padding: 0 20px; 
+	box-sizing: border-box;
+	font-size: 18px; 
+	outline: none;
+	border-radius: 1px solid ;
+	border-color:  black;
+	padding-bottom: 0px;
+}
+.form .input-group span,.form .input-group textarea span
+{
+	position: absolute;
+	top: 12px; 
+	left: 20px;
+	padding: 0; 
+	transition: 0.5s; 
+	pointer-events: none;
+	background: #fff; 
+	text-transform: uppercase;
+
+}
+.form .input-group input:focus ~ span,.form .input-group input:valid ~ span,
+.form .input-group textarea:focus ~ span
+{
+ top: -12px; 
+ left: 12px;
+ font-size: 12px; 
+ padding: 2px 4px; 
+ border:1px solid #000;
+ background: skyblue;
+}
+.form .input-group input[type=submit]
+{
+	background: skyblue; 
+	border: none;
+	box-shadow: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 600;
+}
+.form .input-group input[type=submit]:hover
+{
+	background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

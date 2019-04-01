@@ -1,26 +1,26 @@
 <?php
 include "../entities/personne.php" ;
 
-if ( isset($_GET['pseudo']) && isset($_GET['nom']) && isset($_GET['cp']) ) 
+if ( isset($_GET['cin']) && isset($_GET['nom']) && isset($_GET['prenom']) ) 
 {
-	$cin=$_GET['pseudo'];
+	$cin=$_GET['cin'];
     $nom=$_GET['nom'];
-	$prenom=$_GET['cp'];
+	$prenom=$_GET['prenom'];
 	
-	if( !empty($_GET['pseudo']) && !empty($_GET['nom']) && !empty($_GET['cp']) )
+	if( !empty($_GET['cin']) && !empty($_GET['nom']) && !empty($_GET['prenom']) )
 	{
-		$compte=new Compte($pseudo,$nom,$prenom);
+		$personne=new Personne($cin,$nom,$prenom);
 		?>
 
 
 
 		<h1> Bienvenue </h1>
-		<label> pseudo: </label>
-		<label> <?php echo $compte->getpseudo(); ?> </label> <br>
+		<label> CIN: </label>
+		<label> <?php echo $personne->getcin(); ?> </label> <br>
 		<label> Nom: </label>
-		<label> <?php echo $compte->getnom(); ?> </label> <br>
-		<label> cp: </label>
-		<label> <?php echo $compte->getcp(); ?> </label> <br>
+		<label> <?php echo $personne->getnom(); ?> </label> <br>
+		<label> Prenom: </label>
+		<label> <?php echo $personne->getprenom(); ?> </label> <br>
 
 <?php
     }

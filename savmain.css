@@ -1,0 +1,19 @@
+.questionforum h6
+{
+	padding : 0px; 
+	margin :0px;
+	color: #00FFFF;
+	text-align: center;
+}
+
+img 
+{
+	height: 255px;
+	width: 255px;
+	
+}
+.feedback img
+{
+	height: 200px; 
+	width: 255px;
+}
