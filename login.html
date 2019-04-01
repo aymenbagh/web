@@ -31,9 +31,9 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 
-
 </head>
 
+<body>
 
 	<!-- Start Header Area -->
 	<header class="header_area sticky-header">
@@ -41,7 +41,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light main_box">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.php"><img src="img/logo.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -51,14 +51,13 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-
-							<li class="nav-item"><a class="nav-link" href="index.php">ACCUEIL</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html">ACCUEIL</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">BOUTIQUE</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="boutique/category.php">CATEGORIES</a></li>
-									<li class="nav-item"><a class="nav-link" href="boutique/single-product.php">DETAILS DES PRODUITS</a></li>
+									<li class="nav-item"><a class="nav-link" href="category.html">CATEGORIES</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-product.html">DETAILS DES PRODUITS</a></li>
 									<li class="nav-item"><a class="nav-link" href="checkout.html">VERIFICATION DES PRODUITS</a></li>
 									<li class="nav-item"><a class="nav-link" href="cart.html">PANIER</a></li>
 									<li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li>
@@ -69,15 +68,14 @@
 								 aria-expanded="false">BLOG</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.html">Détail du blog</a></li>
+									<li class="nav-item"><a class="nav-link" href="single-blog.html">DETAILS DU BLOG</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown active">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Pages</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item active">
-										<a class="nav-link" href="login.html">Login</a></li>
+									<li class="nav-item active"><a class="nav-link" href="login.html">Login</a></li>
 									<li class="nav-item"><a class="nav-link" href="tracking.html">Tracking</a></li>
 									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
 								</ul>
@@ -113,8 +111,8 @@
 				<div class="col-first">
 					<h1>Connexion/S'inscrire</h1>
 					<nav class="d-flex align-items-center">
-						<a href="index.php">ACUEIL<span class="lnr lnr-arrow-right"></span></a>
-						<a href="boutique/category.php">Connexion/S'inscrire</a>
+						<a href="index.html">ACUEIL<span class="lnr lnr-arrow-right"></span></a>
+						<a href="category.html">Connexion/S'inscrire</a>
 					</nav>
 				</div>
 			</div>
@@ -132,7 +130,7 @@
 						<div class="hover">
 							<h4>Nouveau sur notre site?</h4>
 							<p>Inscrivez vous pour nous suivre et acheter vos produits en ligne </p>
-							<a class="primary-btn" href="registration.html">créer un compte</a>
+							<a class="primary-btn" href="inscrire.html">créer un compte</a>
 						</div>
 					</div>
 				</div>
@@ -146,7 +144,6 @@ Nom d'utilisateur" onfocus="this.placeholder = ''" onblur="this.placeholder = 'U
 							</div>
 							<div class="col-md-12 form-group">
 								<input type="text" class="form-control" id="name" name="name" placeholder="Mot de passe" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
-								
 							</div>
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
@@ -155,11 +152,7 @@ Nom d'utilisateur" onfocus="this.placeholder = ''" onblur="this.placeholder = 'U
 								</div>
 							</div>
 							<div class="col-md-12 form-group">
-								<!--
 								<button type="submit" value="submit" class="primary-btn">Se connecter</button>
-								-->
-								<a href="index.php">Se connecter </a>
-
 								<a href="#">Mot de passe oublier?</a>
 							</div>
 						</form>
@@ -261,29 +254,6 @@ Nom d'utilisateur" onfocus="this.placeholder = ''" onblur="this.placeholder = 'U
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/main.js"></script>
-	<script type="text/javascript">
-function verif_formulaire()
-{
- if(document.form-control.name.value == "")  {
-   alert("Veuillez entrer votre nom d'utilisateur!");
-   document.form-control.name.focus();
-   return false;
-  }
-
- 
- 
-  
- 
-  
- 
-  
- 
- 
-}
- 
-</script>
-
-	
 </body>
 
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/forms.css">
+<script src="js/regexp.js"></script>
+		<script src="js/passeverif.js"></script>
+		<script src="js/forms.js"></script>
+
+</head>
+<body>
+
+<div class="col-lg-6">
+					<div class="login_form_inner">
+						<h3>Créer un compte</h3>
+	<!--					<form class="row login_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+							<div class="col-md-12 form-group">
+
+								<input type="text" class="form-control" id="name" name="name" placeholder="
+Nom d'utilisateur" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+<br>
+	<input type="email" class="form-control" id="name" name="email" placeholder="
+Nom d'utilisateur" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'">
+							</div>
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Mot de passe" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'"> <br>
+									<input type="text" class="form-control" id="name" name="name" placeholder="Mot de passe" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Repeat Password'">
+							</div>
+							<button type="submit" value="submit" class="primary-btn">Créer compte</button>
+				-->
+				<script>
+				function change(id, val)
+			{
+				if(val == 0)
+					document.getElementById(id).style.backgroundColor = "#dd0000";
+				else if(val == 1)
+					document.getElementById(id).style.backgroundColor = "#70b500";
+				else
+					document.getElementById(id).style.backgroundColor = "#ffc500";
+			}
+		</script>
+		
+    </head>
+	
+    <body>
+		 
+			<h2>Formulaire: </h2>
+			<form method="GET" action="ajouter_compte.php">
+			<div class="p">
+
+
+				<label for="pseudo">Pseudo: </label><input type="text" name="pseudo" id="pseudo" onchange='nform_alphaNum(pseudo.value, change, "verPseudo")' />
+					<div id="verPseudo" class="zoneVerif"></div><br />
+				<label for="mdp">Mot de passe: </label><input type="password" name="mdp" id="mdp" onchange='nform_pass(mdp.value, change, "verMdp")' />
+					<div id="verMdp" class="zoneVerif"></div><br />
+				<label for="mdp2">Retapez le mot de passe: </label><input type="password" name="mdp2" id="mdp2" onchange='nform_passVerif(mdp.value, mdp2.value, change, "verMdp2")' />
+					<div id="verMdp2" class="zoneVerif"></div><br />
+				<label for="mail">Adresse email: </label><input type="text" name="mail" id="mail" onchange='nform_mail(mail.value, change, "verMail")' />
+					<div id="verMail" class="zoneVerif"></div><br />
+			</div>
+				<hr />
+			<div class="p">
+				<label for="nom">Nom: </label><input type="text" name="nom" id="nom" onchange='nform_alpha(nom.value, change, "verNom")' />
+					<div id="verNom" class="zoneVerif"></div><br />
+				<label for="cp">Code postal: </label><input type="text" name="cp" id="cp" onchange='nform_num(cp.value, change, "verCp")' />
+					<div id="verCp" class="zoneVerif"></div><br />
+					
+			</div>	
+		
+
+						<button type="submit" value="submit" class="primary-btn">Créer compte</button>
+
+				</form>
+						
+
+
+
+				
+
+
+
+		
+		
+							<script>
+		var pseudo = document.getElementById("pseudo");
+			var mdp = document.getElementById("mdp");
+			var mdp2 = document.getElementById("mpd2");
+			var mail = document.getElementById("mail");
+			var nom = document.getElementById("nom");
+			var cp = document.getElementById("cp");
+			
+		</script>
+
+</body>
+</html>
